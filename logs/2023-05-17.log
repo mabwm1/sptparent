@@ -1,0 +1,568 @@
+[INFO]2023-05-17 14:37:43,306 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 4236 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 14:37:43,311 - No active profile set, falling back to 1 default profile: "default"
+[WARN]2023-05-17 14:37:45,119 - No MyBatis mapper was found in '[cn.bdqn.sptparent.mybatisplus]' package. Please check your configuration.
+[INFO]2023-05-17 14:37:45,932 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 14:37:45,934 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 14:37:45,934 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 14:37:45,935 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 14:37:45,985 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 14:37:45,998 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 14:37:45,999 - Starting service [Tomcat]
+[INFO]2023-05-17 14:37:45,999 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 14:37:46,289 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 14:37:46,289 - Root WebApplicationContext: initialization completed in 2777 ms
+[WARN]2023-05-17 14:37:46,430 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bdqn.sptparent.mybatisplus.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO]2023-05-17 14:37:46,436 - Stopping service [Tomcat]
+[ERROR]2023-05-17 14:37:46,637 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bdqn.sptparent.mybatisplus.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at cn.bdqn.sptparent.mybatisplus.SptparentMybatisplusApplication.main(SptparentMybatisplusApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bdqn.sptparent.mybatisplus.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bdqn.sptparent.mybatisplus.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 34 common frames omitted
+[INFO]2023-05-17 14:38:23,089 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 11320 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 14:38:23,095 - No active profile set, falling back to 1 default profile: "default"
+[WARN]2023-05-17 14:38:24,200 - No MyBatis mapper was found in '[cn.bdqn.sptparent.mapper]' package. Please check your configuration.
+[INFO]2023-05-17 14:38:24,857 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 14:38:24,859 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 14:38:24,859 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 14:38:24,860 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 14:38:24,866 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 14:38:24,882 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 14:38:24,884 - Starting service [Tomcat]
+[INFO]2023-05-17 14:38:24,884 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 14:38:25,096 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 14:38:25,096 - Root WebApplicationContext: initialization completed in 1922 ms
+[WARN]2023-05-17 14:38:25,180 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bdqn.sptparent.mybatisplus.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO]2023-05-17 14:38:25,184 - Stopping service [Tomcat]
+[ERROR]2023-05-17 14:38:25,264 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bdqn.sptparent.mybatisplus.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at cn.bdqn.sptparent.mybatisplus.SptparentMybatisplusApplication.main(SptparentMybatisplusApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bdqn.sptparent.mybatisplus.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bdqn.sptparent.mybatisplus.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 34 common frames omitted
+[INFO]2023-05-17 14:38:51,515 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 12312 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 14:38:51,521 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 14:38:53,516 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 14:38:53,518 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 14:38:53,518 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 14:38:53,518 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 14:38:53,524 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 14:38:53,536 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 14:38:53,537 - Starting service [Tomcat]
+[INFO]2023-05-17 14:38:53,538 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 14:38:53,796 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 14:38:53,796 - Root WebApplicationContext: initialization completed in 2202 ms
+[INFO]2023-05-17 14:38:56,184 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 14:38:56,216 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 14:38:56,265 - Started SptparentMybatisplusApplication in 5.906 seconds (JVM running for 7.901)
+[INFO]2023-05-17 14:39:05,885 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 14:39:05,885 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 14:39:05,886 - Completed initialization in 1 ms
+[INFO]2023-05-17 14:39:47,304 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 524 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 14:39:47,309 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 14:39:49,274 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 14:39:49,276 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 14:39:49,276 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 14:39:49,276 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 14:39:49,281 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 14:39:49,293 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 14:39:49,294 - Starting service [Tomcat]
+[INFO]2023-05-17 14:39:49,294 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 14:39:49,607 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 14:39:49,607 - Root WebApplicationContext: initialization completed in 2215 ms
+[INFO]2023-05-17 14:39:52,145 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 14:39:52,165 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 14:39:52,204 - Started SptparentMybatisplusApplication in 5.843 seconds (JVM running for 7.295)
+[INFO]2023-05-17 14:40:06,658 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 14:40:06,658 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 14:40:06,660 - Completed initialization in 2 ms
+[INFO]2023-05-17 14:40:06,845 - HikariPool-1 - Starting...
+[INFO]2023-05-17 14:40:07,773 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 14:59:04,372 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 14:59:04,395 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 14:59:19,183 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 15120 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 14:59:19,189 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 14:59:20,966 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 14:59:20,968 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 14:59:20,968 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 14:59:20,968 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 14:59:20,973 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 14:59:20,985 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 14:59:20,986 - Starting service [Tomcat]
+[INFO]2023-05-17 14:59:20,986 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 14:59:21,162 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 14:59:21,162 - Root WebApplicationContext: initialization completed in 1893 ms
+[INFO]2023-05-17 14:59:23,200 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 14:59:23,227 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 14:59:23,264 - Started SptparentMybatisplusApplication in 4.936 seconds (JVM running for 6.485)
+[INFO]2023-05-17 15:01:06,224 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:01:06,224 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:01:06,234 - Completed initialization in 10 ms
+[INFO]2023-05-17 15:02:23,802 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 7100 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:02:23,807 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:02:25,549 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:02:25,551 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:02:25,551 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:02:25,551 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:02:25,556 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:02:25,567 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:02:25,568 - Starting service [Tomcat]
+[INFO]2023-05-17 15:02:25,568 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:02:25,750 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:02:25,751 - Root WebApplicationContext: initialization completed in 1863 ms
+[INFO]2023-05-17 15:02:27,671 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:02:27,689 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:02:27,723 - Started SptparentMybatisplusApplication in 4.748 seconds (JVM running for 6.204)
+[INFO]2023-05-17 15:02:32,517 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:02:32,517 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:02:32,520 - Completed initialization in 3 ms
+[INFO]2023-05-17 15:04:09,541 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 7744 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:04:09,546 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:04:11,288 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:04:11,290 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:04:11,290 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:04:11,291 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:04:11,297 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:04:11,312 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:04:11,313 - Starting service [Tomcat]
+[INFO]2023-05-17 15:04:11,313 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:04:11,554 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:04:11,554 - Root WebApplicationContext: initialization completed in 1936 ms
+[INFO]2023-05-17 15:04:13,471 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:04:13,491 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:04:13,526 - Started SptparentMybatisplusApplication in 4.791 seconds (JVM running for 7.534)
+[INFO]2023-05-17 15:05:11,486 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:05:11,487 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:05:11,489 - Completed initialization in 2 ms
+[WARN]2023-05-17 15:05:11,722 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "test2": not a valid `java.lang.Integer` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "test2": not a valid `java.lang.Integer` value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 17] (through reference chain: cn.bdqn.sptparent.mybatisplus.po.User["userGender"])]
+[INFO]2023-05-17 15:08:14,254 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 13580 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:08:14,260 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:08:16,070 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:08:16,071 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:08:16,072 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:08:16,072 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:08:16,077 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:08:16,089 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:08:16,089 - Starting service [Tomcat]
+[INFO]2023-05-17 15:08:16,090 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:08:16,368 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:08:16,369 - Root WebApplicationContext: initialization completed in 2031 ms
+[INFO]2023-05-17 15:08:18,421 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:08:18,441 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:08:18,520 - Started SptparentMybatisplusApplication in 5.257 seconds (JVM running for 6.673)
+[INFO]2023-05-17 15:08:44,056 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:08:44,056 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:08:44,059 - Completed initialization in 3 ms
+[WARN]2023-05-17 15:08:44,216 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "test2": not a valid `java.lang.Integer` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "test2": not a valid `java.lang.Integer` value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 17] (through reference chain: cn.bdqn.sptparent.mybatisplus.po.User["userGender"])]
+[INFO]2023-05-17 15:10:24,546 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 12152 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:10:24,552 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:10:26,659 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:10:26,660 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:10:26,661 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:10:26,661 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:10:26,667 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:10:26,681 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:10:26,683 - Starting service [Tomcat]
+[INFO]2023-05-17 15:10:26,683 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:10:27,015 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:10:27,018 - Root WebApplicationContext: initialization completed in 2387 ms
+[INFO]2023-05-17 15:10:29,309 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:10:29,333 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:10:29,367 - Started SptparentMybatisplusApplication in 5.747 seconds (JVM running for 8.323)
+[INFO]2023-05-17 15:10:45,503 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 13864 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:10:45,509 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:10:47,222 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:10:47,223 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:10:47,223 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:10:47,223 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:10:47,227 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:10:47,235 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:10:47,236 - Starting service [Tomcat]
+[INFO]2023-05-17 15:10:47,236 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:10:47,430 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:10:47,431 - Root WebApplicationContext: initialization completed in 1848 ms
+[INFO]2023-05-17 15:10:49,391 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:10:49,423 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:10:49,476 - Started SptparentMybatisplusApplication in 4.826 seconds (JVM running for 6.28)
+[INFO]2023-05-17 15:11:02,947 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:11:02,947 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:11:02,950 - Completed initialization in 3 ms
+[INFO]2023-05-17 15:11:03,296 - HikariPool-1 - Starting...
+[INFO]2023-05-17 15:11:04,210 - HikariPool-1 - Start completed.
+[ERROR]2023-05-17 15:11:04,479 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'userNickName' doesn't have a default value
+### The error may exist in cn/bdqn/sptparent/mybatisplus/mapper/UserMapper.java (best guess)
+### The error may involve cn.bdqn.sptparent.mybatisplus.mapper.UserMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO user  ( userName, userPassword, userRealname, userGender, userBirthday, userAddress, userHomePlace, userProfilePictureSrc )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'userNickName' doesn't have a default value
+; Field 'userNickName' doesn't have a default value; nested exception is java.sql.SQLException: Field 'userNickName' doesn't have a default value] with root cause
+java.sql.SQLException: Field 'userNickName' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy77.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:56)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:85)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy61.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy66.insert(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:61)
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at cn.bdqn.sptparent.mybatisplus.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$71e03d70.save(<generated>)
+	at cn.bdqn.sptparent.mybatisplus.controller.UserController.add(UserController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO]2023-05-17 15:12:19,200 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 15:12:19,222 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 15:12:30,919 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 13708 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:12:30,923 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:12:33,506 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:12:33,508 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:12:33,508 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:12:33,508 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:12:33,541 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:12:33,584 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:12:33,586 - Starting service [Tomcat]
+[INFO]2023-05-17 15:12:33,586 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:12:34,107 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:12:34,108 - Root WebApplicationContext: initialization completed in 3088 ms
+[INFO]2023-05-17 15:12:36,720 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:12:36,739 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:12:36,767 - Started SptparentMybatisplusApplication in 6.72 seconds (JVM running for 8.505)
+[INFO]2023-05-17 15:12:53,411 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:12:53,411 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:12:53,413 - Completed initialization in 2 ms
+[INFO]2023-05-17 15:12:53,724 - HikariPool-1 - Starting...
+[INFO]2023-05-17 15:12:54,746 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 15:13:06,231 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 15:13:06,248 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 15:18:28,524 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 10488 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:18:28,529 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:18:30,388 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:18:30,390 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:18:30,391 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:18:30,391 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:18:30,396 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:18:30,408 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:18:30,409 - Starting service [Tomcat]
+[INFO]2023-05-17 15:18:30,409 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:18:30,601 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:18:30,602 - Root WebApplicationContext: initialization completed in 1994 ms
+[INFO]2023-05-17 15:18:32,704 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:18:32,737 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:18:32,770 - Started SptparentMybatisplusApplication in 5.126 seconds (JVM running for 6.587)
+[INFO]2023-05-17 15:18:43,942 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:18:43,942 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:18:43,944 - Completed initialization in 1 ms
+[INFO]2023-05-17 15:18:44,156 - HikariPool-1 - Starting...
+[INFO]2023-05-17 15:18:45,063 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 15:22:27,772 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 15:22:27,797 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 15:46:27,815 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 13864 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:46:27,820 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:46:29,803 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:46:29,805 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:46:29,806 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:46:29,806 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:46:29,812 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:46:29,824 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:46:29,825 - Starting service [Tomcat]
+[INFO]2023-05-17 15:46:29,826 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:46:30,036 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:46:30,037 - Root WebApplicationContext: initialization completed in 2128 ms
+[INFO]2023-05-17 15:46:33,562 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:46:33,597 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:46:33,641 - Started SptparentMybatisplusApplication in 6.845 seconds (JVM running for 8.562)
+[INFO]2023-05-17 15:46:44,143 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:46:44,143 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:46:44,146 - Completed initialization in 3 ms
+[INFO]2023-05-17 15:46:44,318 - HikariPool-1 - Starting...
+[INFO]2023-05-17 15:46:45,143 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 15:47:47,214 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 15:47:47,232 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 15:48:02,715 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 11476 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:48:02,720 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:48:04,652 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:48:04,654 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:48:04,654 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:48:04,655 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:48:04,660 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:48:04,674 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:48:04,675 - Starting service [Tomcat]
+[INFO]2023-05-17 15:48:04,675 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:48:04,928 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:48:04,928 - Root WebApplicationContext: initialization completed in 2123 ms
+[INFO]2023-05-17 15:48:06,983 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:48:07,002 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:48:07,023 - Started SptparentMybatisplusApplication in 5.209 seconds (JVM running for 6.751)
+[INFO]2023-05-17 15:48:38,036 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:48:38,036 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:48:38,039 - Completed initialization in 2 ms
+[INFO]2023-05-17 15:48:38,208 - HikariPool-1 - Starting...
+[INFO]2023-05-17 15:48:39,058 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 15:49:12,188 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 15:49:12,204 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 15:49:30,198 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 9200 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:49:30,204 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:49:31,898 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:49:31,899 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:49:31,899 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:49:31,900 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:49:31,904 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:49:31,914 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:49:31,915 - Starting service [Tomcat]
+[INFO]2023-05-17 15:49:31,915 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:49:32,109 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:49:32,110 - Root WebApplicationContext: initialization completed in 1828 ms
+[INFO]2023-05-17 15:49:34,047 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:49:34,066 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:49:34,095 - Started SptparentMybatisplusApplication in 4.736 seconds (JVM running for 6.108)
+[INFO]2023-05-17 15:49:48,964 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:49:48,964 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:49:48,966 - Completed initialization in 2 ms
+[INFO]2023-05-17 15:49:49,140 - HikariPool-1 - Starting...
+[INFO]2023-05-17 15:49:50,037 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 15:50:10,712 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 15:50:10,728 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 15:50:34,110 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 2168 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 15:50:34,115 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 15:50:35,865 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 15:50:35,867 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 15:50:35,867 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 15:50:35,867 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 15:50:35,872 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 15:50:35,887 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:50:35,889 - Starting service [Tomcat]
+[INFO]2023-05-17 15:50:35,889 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 15:50:36,088 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 15:50:36,089 - Root WebApplicationContext: initialization completed in 1889 ms
+[INFO]2023-05-17 15:50:38,044 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 15:50:38,063 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 15:50:38,092 - Started SptparentMybatisplusApplication in 4.811 seconds (JVM running for 6.241)
+[INFO]2023-05-17 15:51:00,001 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 15:51:00,002 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 15:51:00,004 - Completed initialization in 2 ms
+[INFO]2023-05-17 15:51:00,228 - HikariPool-1 - Starting...
+[INFO]2023-05-17 15:51:01,117 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 15:51:06,438 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 15:51:06,453 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 16:03:34,449 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 2968 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 16:03:34,455 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 16:03:36,207 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 16:03:36,209 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 16:03:36,209 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 16:03:36,209 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 16:03:36,214 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 16:03:36,224 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 16:03:36,225 - Starting service [Tomcat]
+[INFO]2023-05-17 16:03:36,225 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 16:03:36,438 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 16:03:36,439 - Root WebApplicationContext: initialization completed in 1902 ms
+[INFO]2023-05-17 16:03:38,572 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 16:03:38,592 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 16:03:38,621 - Started SptparentMybatisplusApplication in 5.033 seconds (JVM running for 6.483)
+[INFO]2023-05-17 16:04:15,400 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 16:04:15,400 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 16:04:15,403 - Completed initialization in 3 ms
+[INFO]2023-05-17 16:04:15,667 - HikariPool-1 - Starting...
+[INFO]2023-05-17 16:04:16,600 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 16:05:06,204 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 16:05:06,222 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 16:05:21,288 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 620 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 16:05:21,294 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 16:05:23,419 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 16:05:23,421 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 16:05:23,422 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 16:05:23,422 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 16:05:23,427 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 16:05:23,439 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 16:05:23,440 - Starting service [Tomcat]
+[INFO]2023-05-17 16:05:23,440 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 16:05:23,688 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 16:05:23,688 - Root WebApplicationContext: initialization completed in 2311 ms
+[INFO]2023-05-17 16:05:25,815 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 16:05:25,833 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 16:05:25,859 - Started SptparentMybatisplusApplication in 5.488 seconds (JVM running for 7.186)
+[INFO]2023-05-17 16:05:29,472 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 16:05:29,473 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 16:05:29,475 - Completed initialization in 2 ms
+[INFO]2023-05-17 16:05:29,672 - HikariPool-1 - Starting...
+[INFO]2023-05-17 16:05:30,733 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 16:05:57,566 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 16:05:57,586 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-17 16:50:17,391 - Starting SptparentWebApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 9424 (H:\IntelliJ IDEA Project\sptparent\sptparent-web\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-17 16:50:17,397 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-17 16:50:19,477 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-17 16:50:19,479 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-17 16:50:19,480 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-17 16:50:19,480 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-17 16:50:19,485 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-17 16:50:19,497 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 16:50:19,498 - Starting service [Tomcat]
+[INFO]2023-05-17 16:50:19,499 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-17 16:50:19,691 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-17 16:50:19,692 - Root WebApplicationContext: initialization completed in 2194 ms
+[INFO]2023-05-17 16:50:22,509 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-17 16:50:22,533 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-17 16:50:22,562 - Started SptparentWebApplication in 6.171 seconds (JVM running for 7.711)
+[INFO]2023-05-17 16:50:29,694 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-17 16:50:29,694 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-17 16:50:29,695 - Completed initialization in 1 ms
+[INFO]2023-05-17 16:50:29,840 - HikariPool-1 - Starting...
+[INFO]2023-05-17 16:50:30,735 - HikariPool-1 - Start completed.
+[INFO]2023-05-17 16:51:13,468 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-17 16:51:13,485 - HikariPool-1 - Shutdown completed.

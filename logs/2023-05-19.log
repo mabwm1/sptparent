@@ -1,0 +1,158 @@
+[INFO]2023-05-19 11:23:08,309 - Starting SptparentMybatisplusApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 668 (H:\IntelliJ IDEA Project\sptparent\sptparent-mybatisplus\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-19 11:23:08,314 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-19 11:23:10,185 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-19 11:23:10,187 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-19 11:23:10,188 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-19 11:23:10,188 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-19 11:23:10,193 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-19 11:23:10,206 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-19 11:23:10,207 - Starting service [Tomcat]
+[INFO]2023-05-19 11:23:10,207 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-19 11:23:10,503 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-19 11:23:10,504 - Root WebApplicationContext: initialization completed in 2108 ms
+[INFO]2023-05-19 11:23:19,122 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-19 11:23:19,143 - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO]2023-05-19 11:23:19,164 - Started SptparentMybatisplusApplication in 11.754 seconds (JVM running for 13.282)
+[INFO]2023-05-19 11:23:36,338 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO]2023-05-19 11:23:36,338 - Initializing Servlet 'dispatcherServlet'
+[INFO]2023-05-19 11:23:36,340 - Completed initialization in 2 ms
+[INFO]2023-05-19 11:23:36,496 - HikariPool-1 - Starting...
+[INFO]2023-05-19 11:23:37,363 - HikariPool-1 - Start completed.
+[INFO]2023-05-19 11:23:54,938 - HikariPool-1 - Shutdown initiated...
+[INFO]2023-05-19 11:23:54,971 - HikariPool-1 - Shutdown completed.
+[INFO]2023-05-19 14:04:14,921 - Starting SptparentWebApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 4200 (H:\IntelliJ IDEA Project\sptparent\sptparent-web\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-19 14:04:14,923 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-19 14:04:15,073 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-05-19 14:04:15,074 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-05-19 14:04:19,289 - Tomcat initialized with port(s): 8088 (http)
+[INFO]2023-05-19 14:04:19,291 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-19 14:04:19,291 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-19 14:04:19,291 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-19 14:04:19,468 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-19 14:04:19,551 - Initializing ProtocolHandler ["http-nio-8088"]
+[INFO]2023-05-19 14:04:19,552 - Starting service [Tomcat]
+[INFO]2023-05-19 14:04:19,553 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-19 14:04:20,017 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[INFO]2023-05-19 14:04:20,030 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-19 14:04:20,031 - Root WebApplicationContext: initialization completed in 4957 ms
+[INFO]2023-05-19 14:04:23,222 - LiveReload server is running on port 35729
+[INFO]2023-05-19 14:04:23,263 - Starting ProtocolHandler ["http-nio-8088"]
+[INFO]2023-05-19 14:04:23,325 - Tomcat started on port(s): 8088 (http) with context path '/mall'
+[INFO]2023-05-19 14:04:23,361 - Started SptparentWebApplication in 9.681 seconds (JVM running for 12.171)
+[INFO]2023-05-19 14:08:05,484 - Starting SptparentWebApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 7640 (H:\IntelliJ IDEA Project\sptparent\sptparent-web\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-19 14:08:05,486 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-19 14:08:05,585 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-05-19 14:08:05,585 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-05-19 14:08:07,728 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-19 14:08:07,729 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-19 14:08:07,729 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-19 14:08:07,729 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-19 14:08:07,733 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-19 14:08:07,743 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-19 14:08:07,743 - Starting service [Tomcat]
+[INFO]2023-05-19 14:08:07,744 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-19 14:08:08,048 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[INFO]2023-05-19 14:08:08,060 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-19 14:08:08,060 - Root WebApplicationContext: initialization completed in 2474 ms
+[INFO]2023-05-19 14:08:10,736 - LiveReload server is running on port 35729
+[INFO]2023-05-19 14:08:10,774 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-19 14:08:10,810 - Tomcat started on port(s): 8080 (http) with context path '/mall'
+[INFO]2023-05-19 14:08:10,832 - Started SptparentWebApplication in 6.345 seconds (JVM running for 8.326)
+[INFO]2023-05-19 14:56:05,457 - Starting SptparentWebApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 14036 (H:\IntelliJ IDEA Project\sptparent\sptparent-web\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-19 14:56:05,459 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-19 14:56:05,564 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-05-19 14:56:05,565 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-05-19 14:56:07,933 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-19 14:56:07,934 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-19 14:56:07,934 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-19 14:56:07,935 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-19 14:56:07,939 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-19 14:56:07,950 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-19 14:56:07,951 - Starting service [Tomcat]
+[INFO]2023-05-19 14:56:07,951 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-19 14:56:08,283 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[INFO]2023-05-19 14:56:08,293 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-19 14:56:08,293 - Root WebApplicationContext: initialization completed in 2724 ms
+[INFO]2023-05-19 14:56:11,382 - LiveReload server is running on port 35729
+[INFO]2023-05-19 14:56:11,419 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-19 14:56:11,447 - Tomcat started on port(s): 8080 (http) with context path '/mall'
+[INFO]2023-05-19 14:56:11,470 - Started SptparentWebApplication in 7.045 seconds (JVM running for 9.192)
+[INFO]2023-05-19 15:11:50,444 - Starting SptparentWebApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 7848 (H:\IntelliJ IDEA Project\sptparent\sptparent-web\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-19 15:11:50,446 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-19 15:11:50,551 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-05-19 15:11:50,551 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-05-19 15:11:53,035 - Tomcat initialized with port(s): 8080 (http)
+[INFO]2023-05-19 15:11:53,036 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-19 15:11:53,037 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-19 15:11:53,037 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-19 15:11:53,042 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-19 15:11:53,060 - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-19 15:11:53,061 - Starting service [Tomcat]
+[INFO]2023-05-19 15:11:53,061 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-19 15:11:53,426 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[INFO]2023-05-19 15:11:53,435 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-19 15:11:53,435 - Root WebApplicationContext: initialization completed in 2883 ms
+[INFO]2023-05-19 15:11:56,172 - LiveReload server is running on port 35729
+[INFO]2023-05-19 15:11:56,204 - Starting ProtocolHandler ["http-nio-8080"]
+[INFO]2023-05-19 15:11:56,251 - Tomcat started on port(s): 8080 (http) with context path '/mall'
+[INFO]2023-05-19 15:11:56,291 - Started SptparentWebApplication in 6.84 seconds (JVM running for 8.716)
+[INFO]2023-05-19 15:14:24,571 - Starting SptparentWebApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 4704 (H:\IntelliJ IDEA Project\sptparent\sptparent-web\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-19 15:14:24,573 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-19 15:14:24,680 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-05-19 15:14:24,680 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-05-19 15:14:26,951 - Tomcat initialized with port(s): 8082 (http)
+[INFO]2023-05-19 15:14:26,952 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-19 15:14:26,953 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-19 15:14:26,953 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-19 15:14:26,958 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-19 15:14:26,968 - Initializing ProtocolHandler ["http-nio-8082"]
+[INFO]2023-05-19 15:14:26,969 - Starting service [Tomcat]
+[INFO]2023-05-19 15:14:26,969 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-19 15:14:27,297 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[INFO]2023-05-19 15:14:27,306 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-19 15:14:27,307 - Root WebApplicationContext: initialization completed in 2626 ms
+[INFO]2023-05-19 15:14:30,144 - LiveReload server is running on port 35729
+[INFO]2023-05-19 15:14:30,201 - Starting ProtocolHandler ["http-nio-8082"]
+[INFO]2023-05-19 15:14:30,244 - Tomcat started on port(s): 8082 (http) with context path '/mall'
+[INFO]2023-05-19 15:14:30,271 - Started SptparentWebApplication in 6.576 seconds (JVM running for 8.347)
+[INFO]2023-05-19 15:15:07,096 - Starting SptparentWebApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 13380 (H:\IntelliJ IDEA Project\sptparent\sptparent-web\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-19 15:15:07,098 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-19 15:15:07,202 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-05-19 15:15:07,202 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-05-19 15:15:09,596 - Tomcat initialized with port(s): 8082 (http)
+[INFO]2023-05-19 15:15:09,598 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-19 15:15:09,599 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-19 15:15:09,599 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-19 15:15:09,605 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-19 15:15:09,617 - Initializing ProtocolHandler ["http-nio-8082"]
+[INFO]2023-05-19 15:15:09,617 - Starting service [Tomcat]
+[INFO]2023-05-19 15:15:09,618 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-19 15:15:09,954 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[INFO]2023-05-19 15:15:09,963 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-19 15:15:09,963 - Root WebApplicationContext: initialization completed in 2760 ms
+[INFO]2023-05-19 15:15:13,287 - LiveReload server is running on port 35729
+[INFO]2023-05-19 15:15:13,324 - Starting ProtocolHandler ["http-nio-8082"]
+[INFO]2023-05-19 15:15:13,353 - Tomcat started on port(s): 8082 (http) with context path '/mall'
+[INFO]2023-05-19 15:15:13,376 - Started SptparentWebApplication in 7.673 seconds (JVM running for 9.538)
+[INFO]2023-05-19 15:39:14,317 - Starting SptparentWebApplication using Java 1.8.0_361 on DESKTOP-O7INAPN with PID 8856 (H:\IntelliJ IDEA Project\sptparent\sptparent-web\target\classes started by 14457 in H:\IntelliJ IDEA Project\sptparent)
+[INFO]2023-05-19 15:39:14,320 - No active profile set, falling back to 1 default profile: "default"
+[INFO]2023-05-19 15:39:14,454 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO]2023-05-19 15:39:14,455 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO]2023-05-19 15:39:16,209 - Multiple Spring Data modules found, entering strict repository configuration mode
+[INFO]2023-05-19 15:39:16,213 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO]2023-05-19 15:39:16,255 - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+[INFO]2023-05-19 15:39:17,442 - Tomcat initialized with port(s): 8082 (http)
+[INFO]2023-05-19 15:39:17,443 - Loaded Apache Tomcat Native library [1.2.30] using APR version [1.7.0].
+[INFO]2023-05-19 15:39:17,443 - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[INFO]2023-05-19 15:39:17,443 - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[INFO]2023-05-19 15:39:17,447 - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+[INFO]2023-05-19 15:39:17,458 - Initializing ProtocolHandler ["http-nio-8082"]
+[INFO]2023-05-19 15:39:17,459 - Starting service [Tomcat]
+[INFO]2023-05-19 15:39:17,459 - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[INFO]2023-05-19 15:39:17,828 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[INFO]2023-05-19 15:39:17,835 - Initializing Spring embedded WebApplicationContext
+[INFO]2023-05-19 15:39:17,835 - Root WebApplicationContext: initialization completed in 3378 ms
+[INFO]2023-05-19 15:39:21,335 - LiveReload server is running on port 35729
+[INFO]2023-05-19 15:39:21,373 - Starting ProtocolHandler ["http-nio-8082"]
+[INFO]2023-05-19 15:39:21,414 - Tomcat started on port(s): 8082 (http) with context path '/mall'
+[INFO]2023-05-19 15:39:21,446 - Started SptparentWebApplication in 8.183 seconds (JVM running for 10.865)

@@ -1,0 +1,26 @@
+POST http://localhost:8080/user/add
+Content-Type: application/json
+
+{
+  "userName": "test2",
+  "userPassword": "123564",
+  "userNickName": "test2",
+  "userRealname": "321",
+  "userGender": "1",
+  "userAddress": "110000",
+  "userHomePlace": "110113",
+  "userProfilePictureSrc": "tc"
+}
+
+### GET request with a header
+GET http://localhost:8080/user/page?pageNum=2&pageSize=10
+Accept: application/json
+
+
+### GET request with a header
+GET http://localhost:8080/user/like?name=test
+Accept: application/json
+
+### GET request with a header
+GET http://localhost:8080/user/like2?name=a&pageNum=1&pageSize=2
+Accept: application/json

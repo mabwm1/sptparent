@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mall?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password:
+  mvc:
+    view:
+      prefix: /WEB-INF/page/
+      suffix: .html
+    static-path-pattern: /static/**
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password: 123
+server:
+  servlet:
+    context-path: /mall
+  port: 8080
+mybatis-plus:
+  # xml??
+  mapper-locations: classpath:mapper/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      field-strategy: NOT_EMPTY
+      db-type: MYSQL
+  configuration:
+    map-underscore-to-camel-case: false
+    call-setters-on-nulls: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
